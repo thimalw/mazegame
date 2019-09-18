@@ -83,8 +83,6 @@ Game.prototype.update = function() {
 }
 
 Game.prototype.handleKeyDown = function(e) {
-    console.log(e.keyCode);
-
     switch (e.keyCode) {
         case 87: // up
             if (this.mazeGrid.cells[this.player.y][this.player.x].state & cellStates.top) {
